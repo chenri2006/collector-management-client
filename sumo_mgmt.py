@@ -2,14 +2,11 @@ import os
 import re
 import json
 import time
-try:
-    from itertools import zip_longest
-except ImportError:
-    from itertools import izip_longest as zip_longest
+from itertools import zip_longest
 import requests
 import argparse
 from datetime import datetime
-from terminaltables import AsciiTable
+from terminaltables import AsciiTable # type: ignore
 from builtins import input
 import getpass
 
